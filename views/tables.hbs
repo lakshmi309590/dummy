@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+       <h1>Table Example</h1>
+       <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>PRICE</th>
+            </tr>
+        </thead>
+        <tbody>
+             {{#each tableData}}
+          <tr>
+            <td>{{id}}</td>
+            <td>{{name}}</td>
+            <td>${{price}}</td>
+          </tr>
+        {{/each}}
+        </tbody>
+       </table>
+    </div>
+</body>
+</html>
